@@ -8,7 +8,7 @@ const fakeAnswersRepository: AnswersRepository = {
   },
 }
 
-test('crete an answer', async () => {
+test('create an answer', async () => {
   const answerQuestionUseCase = new AnswerQuestionUseCase(fakeAnswersRepository)
   const answer = await answerQuestionUseCase.execute({
     questionId: '1',
